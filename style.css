@@ -2,7 +2,56 @@ body {
     background-image: url(https://i.postimg.cc/yxG42nrR/396927fd8512436d92cff9826b90bead.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    
 }
+
+.container {
+    text-align: center;
+    padding-top: 1rem;
+    max-width: 800px;
+    margin: 5em auto 3rem auto;
+
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 4rem;
+}
+
+input {
+    margin: 1rem;
+    padding: 0.65rem 3rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #504d4d;
+    outline: none;
+    background: #e2dcdc;
+    font-size: 1rem;
+    
+}
+
+
+.container label {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5rem;
+    border: 3px solid #666666;
+    margin: 1em auto;
+    font-size: 2rem;
+}
+
+@media (max-width: 675px) {
+    .container {
+        max-width: 300px;
+    }
+    
+}
+

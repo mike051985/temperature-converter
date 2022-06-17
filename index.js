@@ -5,16 +5,16 @@ document.getElementById("submit-button").onclick = function() {
         temp = document.getElementById("textbox").value;
         temp = Number(temp);
         temp = toCelcius(temp);
-        document.getElementById('temp-label').textContent = temp + "°C";
+        document.getElementById('temp-label').innerHTML = temp + "°C";
     }
     else if(document.getElementById("f-button").checked) {
         temp = document.getElementById("textbox").value;
         temp = Number(temp);
         temp = toFahrenheit(temp);
-        document.getElementById('temp-label').textContent = temp + "°F";
+        document.getElementById('temp-label').innerHTML = temp + "°F";
     }
     else {
-        document.getElementById('temp-label').textContent = "Select a unit";
+        document.getElementById('temp-label').innerHTML = "Select a unit";
     }
 }
 
