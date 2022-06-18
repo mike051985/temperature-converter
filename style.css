@@ -2,7 +2,6 @@ body {
     background-image: url(https://i.postimg.cc/yxG42nrR/396927fd8512436d92cff9826b90bead.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
     
@@ -10,15 +9,13 @@ body {
 
 .container {
     text-align: center;
-    padding-top: 1rem;
     max-width: 800px;
     margin: 5em auto 3rem auto;
-
 }
 
 h1 {
     font-weight: normal;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 input {
@@ -29,14 +26,22 @@ input {
     border: 1px solid #504d4d;
     outline: none;
     background: #e2dcdc;
-    font-size: 1rem;
+    font-size: 1.5rem;
     
 }
 
+input[type='radio'] { 
+    transform: scale(2); 
+}
+
+.convert label {
+    display: flex;
+    flex-direction: column;
+}
 
 .container label {
     font-size: 2rem;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 button {
@@ -45,13 +50,21 @@ button {
     padding: 0.5rem;
     border: 3px solid #666666;
     margin: 1em auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 675px) {
     .container {
         max-width: 300px;
     }
-    
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input {
+        padding: 0.65rem 2rem;
+        font-size: 1rem;
+    }
 }
 
